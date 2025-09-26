@@ -344,7 +344,7 @@ employeeTemplates += `
           ${name || "Student Name"}
         </h5>
         <p><b>Reg No:</b> ${adcode || "Reg No"}</p>
-        <p><b>Phone:</b> ${phone || "1234567890"}</p>
+        <p style="text-decoration: none;"><b>Phone:</b> ${phone || "1234567890"}</p>
         <p><b>Batch Time:</b> ${designation || "Batch Time"}</p>
         <p><b>Joining Date:</b> ${joiningdate || "Joining Date"}</p>
       </div>
