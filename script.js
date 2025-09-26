@@ -385,25 +385,25 @@ employeeTemplates += `
 `;
 
   // ---------------- STUDENT TEMPLATE 2 ----------------
-  studentTemplates += `
-    <div class="col-md-6 text-center">
-      <div class="icard" id="stu-front-2" style="background:#ffc107; padding:10px;">
-        <h5>${name || "Student Name"}</h5>
-        <p>Class: ${designation || "Class / Grade"}</p>
-        <img src="${photoURL}" class="photo" style="margin:10px auto;">
-        <p>Email: ${email || "student@email.com"}</p>
-        <p>Phone: ${phone || "1234567890"}</p>
-      </div>
-      <p><b>Front</b></p>
-    </div>
-    <div class="col-md-6 text-center">
-      <div class="icard-back" id="stu-back-2" style="background:#ff9800; color:#fff; text-align:center;">
-        <p>Student Guidelines</p>
-      </div>
-      <p><b>Back</b></p>
-      <button class="btn btn-success mt-2" onclick="downloadPDF('stu-front-2','stu-back-2')">Download PDF</button>
-    </div>
-  `;
+//    studentTemplates += `
+//     <div class="col-md-6 text-center">
+//       <div class="icard" id="stu-front-2" style="background:#ffc107; padding:10px;">
+//         <h5>${name || "Student Name"}</h5>
+//         <p>Class: ${designation || "Class / Grade"}</p>
+//         <img src="${photoURL}" class="photo" style="margin:10px auto;">
+//         <p>Email: ${email || "student@email.com"}</p>
+//         <p>Phone: ${phone || "1234567890"}</p>
+//       </div>
+//       <p><b>Front</b></p>
+//     </div>
+//     <div class="col-md-6 text-center">
+//       <div class="icard-back" id="stu-back-2" style="background:#ff9800; color:#fff; text-align:center;">
+//         <p>Student Guidelines</p>
+//       </div>
+//       <p><b>Back</b></p>
+//       <button class="btn btn-success mt-2" onclick="downloadPDF('stu-front-2','stu-back-2')">Download PDF</button>
+//     </div>
+//   `; 
 
   // ✅ Now show only selected type templates
   if (type === "employee") {
