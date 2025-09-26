@@ -317,25 +317,72 @@ employeeTemplates += `
 
   // ---------------- STUDENT TEMPLATE 1 ----------------
   studentTemplates += `
-    <div class="col-md-6 text-center">
-      <div class="icard" id="stu-front-1" style="border:2px solid #28a745; background:#f9f9f9;">
-        <img src="${logoURL}" class="logo" style="float:right; margin:5px;">
-        <img src="${photoURL}" class="photo" style="margin-top:10px;">
-        <h5>${name || "Student Name"}</h5>
-        <p>Class: ${designation || "Class / Grade"}</p>
-        <p>Roll No: ${phone || "123456"}</p>
-        <p>Email: ${email || "student@email.com"}</p>
+  <div class="col-md-6 text-center">
+    <!-- FRONT -->
+    <div class="icard" id="stu-front-1" 
+         style="width:250px; height:415px; border-radius:12px; overflow:hidden; 
+                background:linear-gradient(135deg, #fbedfc 0%, #ffffff 100%);
+                box-shadow:0 4px 8px rgba(0,0,0,0.2); margin:auto;">
+
+      <!-- Header -->
+      <div style="background:#023e8a; color:white; padding:8px; font-weight:bold; font-size:14px;">
+        Student ID Card
       </div>
-      <p><b>Front</b></p>
-    </div>
-    <div class="col-md-6 text-center">
-      <div class="icard-back" id="stu-back-1" style="background:#e9ecef; text-align:center;">
-        <p>Library / School Rules</p>
+
+      <!-- Logo -->
+      <img src="${logoURL}" 
+           style="width:140px; height:100px; margin:-11px auto 0; display:block;" />
+
+      <!-- Photo -->
+      <img src="${photoURL}" 
+           style="width:90px; height:100px; border-radius:8px; border:2px solid #023e8a; 
+                  margin:1px auto; display:block; object-fit:cover;" />
+
+      <!-- Details -->
+      <div style="padding:10px; text-align:left; font-size:13px; line-height:11px;">
+        <h5 style="text-align:center; font-weight:bold; color:#023e8a; margin-bottom:6px;">
+          ${name || "Student Name"}
+        </h5>
+        <p><b>Reg No:</b> ${adcode || "Reg No"}</p>
+        <p><b>Phone:</b> ${phone || "1234567890"}</p>
+        <p><b>Batch Time:</b> ${designation || "Batch Time"}</p>
+        <p><b>Joining Date:</b> ${joiningdate || "Joining Date"}</p>
       </div>
-      <p><b>Back</b></p>
-      <button class="btn btn-success mt-2" onclick="downloadPDF('stu-front-1','stu-back-1')">Download PDF</button>
+
+      <!-- Footer -->
+      <div style="background:#023e8a; color:white; padding:6px; font-size:12px;">
+        Central Library Ara
+      </div>
     </div>
-  `;
+    <p class="mt-2"><b>Front</b></p>
+  </div>
+
+  <div class="col-md-6 text-center">
+    <!-- BACK -->
+    <div class="icard-back" id="stu-back-1" 
+         style="width:250px; height:415px; border-radius:12px; overflow:hidden; 
+                background:linear-gradient(135deg, #fbedfc 0%, #ffffff 100%);
+                display:flex; flex-direction:column; justify-content:center; align-items:center;">
+
+      <h6 style="font-weight:bold; color:#023e8a; margin-top:30px;">Library Rules</h6>
+      <ul style="text-align:left; font-size:12px; list-style:none; padding:0 20px; line-height: 25px;">
+        <li>📰 Always carry your ID card.</li>
+        <li>🕒 Please Follow Your Batch time.</li>
+        <li>📵 Keep phones on silent mode.</li>
+        <li>📕 Handle books and equipment with care.</li>
+      </ul>
+
+      <img src="${logoURL}" 
+           style="width:200px; height:160px; object-fit:contain; display:block;" />
+
+      <p style="margin-top:auto; font-size:11px; color:#555;">Issued by Central Library</p>
+    </div>
+    <p class="mt-2"><b>Back</b></p>
+    <button class="btn btn-success mt-2" onclick="downloadPDF('stu-front-1','stu-back-1')">
+      Download PDF
+    </button>
+  </div>
+`;
 
   // ---------------- STUDENT TEMPLATE 2 ----------------
   studentTemplates += `
