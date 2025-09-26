@@ -1,0 +1,102 @@
+body { background: #f8f9fa; }
+/* template 2 icard */
+
+.idcard-container {
+  width: 350px;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px #aaa;
+  background: #fff;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 20px auto;
+  position: relative;
+}
+.idcard-header {
+  background: #1565c0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 24px 18px 10px 18px;
+  border-bottom: 5px solid #00aaff;
+}
+.company-logo {
+  width: 54px;
+  height: 54px;
+  margin-right: 14px;
+}
+.company-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 600;
+}
+.company-sub {
+  font-size: 15px;
+  color: #d0eaff;
+  font-weight: 400;
+  margin-top: 2px;
+}
+.idcard-photo-section {
+  margin-top: -38px;
+  display: flex;
+  justify-content: center;
+}
+.employee-photo {
+  border: 3px solid #1565c0;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+}
+.idcard-details {
+  color: #111;
+  text-align: left;
+  padding: 14px 32px;
+}
+.employee-name {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 14px;
+}
+.designation {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.row-data {
+  font-size: 15px;
+  margin: 7px 0;
+}
+.idcard-container.back .idcard-header {
+  border-bottom: none;
+}
+.idcard-terms {
+  color: #111;
+  padding: 14px 22px;
+}
+.terms-title {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+}
+.idcard-terms ul {
+  margin: 14px 0;
+  padding-left: 22px;
+  font-size: 14px;
+}
+.idcard-dates {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 10px 0;
+}
+.idcard-barcode {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.idcard-barcode img {
+  width: 190px;
+}

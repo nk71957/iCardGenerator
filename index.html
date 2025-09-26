@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iCard Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container py-4">
+  <h2 class="text-center mb-4">iCard Generator</h2>
+
+  <!-- Form Section -->
+  <div class="card p-4 mb-4">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <input type="text" id="name" class="form-control" placeholder="Full Name">
+      </div>
+      <div class="col-md-6">
+        <input type="text" id="designation" class="form-control" placeholder="Designation">
+      </div>
+      <div class="col-md-6">
+        <input type="email" id="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="col-md-6">
+        <input type="text" id="phone" class="form-control" placeholder="Phone">
+      </div>
+      <div class="col-md-6">
+        <input type="text" id="branchcode" class="form-control" placeholder="Branch Code">
+      </div>
+      <div class="col-md-6">
+        <input type="text" id="adcode" class="form-control" placeholder="Ad Code">
+      </div>
+        <div class="col-md-6">
+        <input type="date" id="joiningdate" class="form-control" placeholder="Joining Date">
+      </div>
+       <div class="col-md-6">
+        <input type="text" id="address" class="form-control" placeholder="Address">
+      </div>
+      <div class="col-md-6">
+        <label>Upload Photo</label>
+        <input type="file" id="photo" class="form-control" accept="image/*">
+      </div>
+      <div class="col-md-6">
+        <label>Upload Company Logo</label>
+        <input type="file" id="logo" class="form-control" accept="image/*">
+      </div>
+      <div class="col-md-6">
+        <label>Select Type</label>
+        <select id="type" class="form-select">
+          <option value="employee">Employee</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-primary" onclick="generatePreview()">Generate Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preview Section -->
+  <div id="templates" class="row g-4"></div>
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
